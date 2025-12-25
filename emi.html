@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EMI Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/emi.css">
+</head>
+<body class="mc-body">
+
+<div class="mc-container">
+    <h1>EMI CALCULATOR</h1>
+
+    <input id="total" placeholder="TOTAL AMOUNT">
+    <input id="down" placeholder="DOWN PAYMENT">
+    <input id="rate" placeholder="INTEREST %">
+    <input id="tenure" placeholder="MONTHS">
+
+    <button onclick="calculate()">CALCULATE</button>
+
+    <div id="result"></div>
+
+    <a href="/" class="back">← BACK</a>
+</div>
+
+<script>
+function calculate() {
+    fetch("/calculate", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+            total: total.value,
+            down: down.value,
+            rate: rate.value,
+            tenure: tenure.value
+        })
+    })
+    .then(res => res.json())
+    .then(d => result.innerText = "EMI: ₹" + d.emi);
+}
+</script>
+
+</body>
+</html>

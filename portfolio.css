@@ -1,0 +1,117 @@
+/* ============================= */
+/* PORTFOLIO — BLACK + HUMAN     */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: #000000;           /* PURE BLACK */
+    color: #e5e5e5;
+    overflow-x: hidden;
+}
+
+/* ===== BACKGROUND CHARACTERS (UNCHANGED) ===== */
+.bg {
+    position: fixed;
+    opacity: 0.12;
+    filter: grayscale(100%) contrast(110%);
+    mix-blend-mode: screen;
+    pointer-events: none;
+}
+
+.denji {
+    left: -80px;
+    top: 10%;
+    width: 420px;
+}
+
+.makima {
+    right: -100px;
+    top: 35%;
+    width: 360px;
+}
+
+.reze {
+    bottom: -60px;
+    left: 40%;
+    width: 320px;
+}
+
+/* ===== HERO ===== */
+.hero {
+    min-height: 100vh;
+    padding: 140px 48px;
+}
+
+.hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 96px;
+    font-weight: 400;
+    letter-spacing: 6px;
+}
+
+.hero p {
+    margin-top: 14px;
+    font-size: 18px;
+    color: #9ca3af;
+    max-width: 420px;
+}
+
+/* ===== PROJECTS ===== */
+.projects {
+    padding: 80px 48px;
+}
+
+.projects h2 {
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #6b7280;
+    margin-bottom: 32px;
+}
+
+/* ===== PROJECT CARD ===== */
+.project {
+    max-width: 720px;
+    border-top: 1px solid #1f2933;
+    padding-top: 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.project h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.project p {
+    margin-top: 10px;
+    color: #9ca3af;
+    max-width: 440px;
+    line-height: 1.5;
+}
+
+/* ===== BUTTON ===== */
+button {
+    background: transparent;
+    border: 1px solid #e5e7eb;
+    color: #e5e7eb;
+    padding: 12px 22px;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: #e5e7eb;
+    color: #000;
+}

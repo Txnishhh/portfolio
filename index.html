@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tanish</title>
+    <link rel="stylesheet" href="/static/portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+<img src="/static/denji.jpg" class="bg denji">
+<img src="/static/makima.jpg" class="bg makima">
+<img src="/static/reze.jpg" class="bg reze">
+
+<section class="hero">
+    <h1>Tanish</h1>
+    <p>Hi! I am a student from VIT Bhopal.</p>
+</section>
+
+<section class="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <div>
+            <h3>Loan EMI Calculator</h3>
+            <p>An easy way to calculate your upcoming expenses.</p>
+        </div>
+        <button onclick="openEmi()">Open App</button>
+    </div>
+</section>
+
+<script>
+function openEmi() {
+    window.location.href = "/loading";
+}
+</script>
+
+</body>
+</html>

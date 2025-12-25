@@ -1,0 +1,137 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.psy-body {
+    background: #050505;
+    color: #e5e5e5;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+
+.bg-char {
+    position: fixed;
+    opacity: 0.12;
+    filter: grayscale(100%) contrast(120%);
+    mix-blend-mode: screen;
+    pointer-events: none;
+    animation: float 12s infinite ease-in-out;
+}
+
+.denji {
+    width: 420px;
+    top: 10%;
+    left: -80px;
+    animation-delay: 0s;
+}
+
+.makima {
+    width: 380px;
+    top: 40%;
+    right: -100px;
+    animation-delay: 3s;
+}
+
+.reze {
+    width: 300px;
+    bottom: -40px;
+    left: 40%;
+    animation-delay: 6s;
+}
+
+.guitar {
+    width: 300px;
+    bottom: 500px;
+    right: 40%;
+    animation-delay: 6s;
+}
+
+
+@keyframes float {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-30px) rotate(1deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+}
+
+
+.hero-human {
+    min-height: 100vh;
+    padding: 120px 24px;
+}
+
+.hero-human h1 {
+    font-size: 80px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    text-shadow:
+        2px 0 red,
+       -2px 0 cyan;
+}
+
+.tagline {
+    margin-top: 20px;
+    max-width: 420px;
+    color: #a1a1a1;
+}
+
+
+.about-human {
+    max-width: 600px;
+    padding: 40px 24px;
+    color: #bdbdbd;
+}
+
+
+.projects-human {
+    padding: 80px 24px;
+}
+
+.projects-human h2 {
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #737373;
+    margin-bottom: 24px;
+}
+
+.project-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 700px;
+    border-top: 1px solid #1f1f1f;
+    padding-top: 24px;
+}
+
+.project-left h3 {
+    font-size: 22px;
+}
+
+.project-left p {
+    color: #9a9a9a;
+    max-width: 420px;
+}
+
+
+.project-right button {
+    background: transparent;
+    border: 1px solid #444;
+    color: #e5e5e5;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.project-right button:hover {
+    border-color: #b91c1c;
+    color: #b91c1c;
+    transform: translateY(-2px);
+}
+
+
+.footer-human {
+    padding: 40px 24px;
+    font-size: 13px;
+    color: #555;
+}
