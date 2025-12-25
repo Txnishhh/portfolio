@@ -1,6 +1,4 @@
-/* ============================= */
-/* EMI APP — MINECRAFT BACKGROUND */
-/* ============================= */
+
 
 * {
     box-sizing: border-box;
@@ -8,12 +6,12 @@
     padding: 0;
 }
 
-/* ===== FULL SCREEN BACKGROUND ===== */
+
 .mc-body {
     min-height: 100vh;
     font-family: 'Press Start 2P', monospace;
 
-    /* Minecraft image fills entire screen */
+    
     background-image: url("/static/minecraft.jpg");
     background-size: cover;
     background-position: center;
@@ -26,19 +24,19 @@
     position: relative;
 }
 
-/* ===== DARK OVERLAY (keeps background behind UI) ===== */
+
 .mc-body::before {
     content: "";
     position: absolute;
     inset: 0;
 
-    /* Adjust this for brightness control */
+    
     background: rgba(0, 0, 0, 0.5);
 
     z-index: 0;
 }
 
-/* ===== EMI CALCULATOR CONTAINER ===== */
+
 .mc-container {
     position: relative;
     z-index: 1;
@@ -46,7 +44,7 @@
     width: 380px;
     padding: 24px;
 
-    /* Stone-like UI */
+    
     background: #e0e0e0;
     border: 4px solid #3a3a3a;
     box-shadow: 6px 6px 0 #1a1a1a;
@@ -54,14 +52,14 @@
     text-align: center;
 }
 
-/* ===== TITLE ===== */
+
 .mc-container h1 {
     font-size: 14px;
     margin-bottom: 18px;
     color: #1a1a1a;
 }
 
-/* ===== INPUT FIELDS ===== */
+
 .mc-container input {
     width: 100%;
     padding: 10px;
@@ -81,7 +79,7 @@
     color: #444;
 }
 
-/* ===== BUTTON ===== */
+
 .mc-container button {
     width: 100%;
     margin-top: 14px;
@@ -101,7 +99,7 @@
     background: #5f9e45;
 }
 
-/* ===== RESULT BOX ===== */
+
 #result {
     margin-top: 16px;
     padding: 10px;
@@ -113,7 +111,7 @@
     color: #000;
 }
 
-/* ===== BACK LINK ===== */
+
 .back {
     display: block;
     margin-top: 18px;
@@ -126,3 +124,4 @@
 .back:hover {
     text-decoration: underline;
 }
+
