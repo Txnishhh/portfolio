@@ -1,6 +1,4 @@
-/* ============================= */
-/* PORTFOLIO — BLACK + HUMAN     */
-/* ============================= */
+
 
 * {
     margin: 0;
@@ -10,12 +8,12 @@
 
 body {
     font-family: 'Space Grotesk', sans-serif;
-    background: #000000;           /* PURE BLACK */
+    background: #000000;          
     color: #e5e5e5;
     overflow-x: hidden;
 }
 
-/* ===== BACKGROUND CHARACTERS (UNCHANGED) ===== */
+
 .bg {
     position: fixed;
     opacity: 0.12;
@@ -42,7 +40,7 @@ body {
     width: 320px;
 }
 
-/* ===== HERO ===== */
+
 .hero {
     min-height: 100vh;
     padding: 140px 48px;
@@ -62,7 +60,7 @@ body {
     max-width: 420px;
 }
 
-/* ===== PROJECTS ===== */
+
 .projects {
     padding: 80px 48px;
 }
@@ -75,7 +73,7 @@ body {
     margin-bottom: 32px;
 }
 
-/* ===== PROJECT CARD ===== */
+
 .project {
     max-width: 720px;
     border-top: 1px solid #1f2933;
@@ -99,7 +97,7 @@ body {
     line-height: 1.5;
 }
 
-/* ===== BUTTON ===== */
+
 button {
     background: transparent;
     border: 1px solid #e5e7eb;
@@ -115,3 +113,4 @@ button:hover {
     background: #e5e7eb;
     color: #000;
 }
+
